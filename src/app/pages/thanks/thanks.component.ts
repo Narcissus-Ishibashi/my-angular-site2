@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
+  standalone: true,
   selector: 'app-thanks',
   templateUrl: './thanks.html',
-  styleUrls: ['./thanks.css']
+  styleUrls: ['./thanks.scss'],
 })
-export class ThanksComponent {}
+export class ThanksComponent {} // ← ✅ この名前が export されてるか確認！

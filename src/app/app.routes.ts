@@ -1,13 +1,21 @@
-import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about';
-import { ContactComponent } from './pages/contact/contact';
-import { ThanksComponent } from './pages/thanks/thanks.component';
+// app.routes.ts
+import { Routes } from '@angular/router'; // ✅ この行が必要！
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'thanks', component: ThanksComponent } // ← OK！
+  {
+    path: '',
+    loadComponent: () =>
+      import('./pages/home/home.component').then((m) => m.HomeComponent),
+  },
+  {
+    path: 'contact',
+    loadComponent: () =>
+      import('./pages/contact/contact.component').then((m) => m.ContactComponent),
+  },
+  {
+    path: 'thanks',
+    loadComponent: () =>
+      import('./pages/thanks/thanks.component').then((m) => m.ThanksComponent),
+  },
 ];
 
