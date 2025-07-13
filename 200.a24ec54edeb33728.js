@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_angular_site=self.webpackChunkmy_angular_site||[]).push([[200],{200:($t,we,v)=>{v.d(we,{MD:()=>Ut});var d=v(615),i=v(664);v(705),v(597);let Ut=(()=>{class e{static \u0275fac=function(n){return new(n||e)};static \u0275mod=i.$C({type:e});static \u0275inj=d.G2t({})}return e})()}}]);
