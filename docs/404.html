@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages の 404 対策：Angular のルーティングに戻す
+      var redirectTo = location.pathname.replace(/^\/my-angular-form/, '');
+      location.replace('/my-angular-form/index.html?redirect=' + redirectTo);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
